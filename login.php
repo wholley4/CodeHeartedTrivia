@@ -1,41 +1,4 @@
-<?php
-   
-$db = "trivia";//Your database name
-$dbu = "admin";//Your database username
-$dbp = "corncakes";//Your database users' password
-$host = "trivia.cxqgmpxfjk2m.us-east-1.rds.amazonaws.com";//MySQL server - usually localhost
-
-$dblink = mysql_connect($host,$dbu,$dbp);
-$seldb = mysql_select_db($db);
-   session_start();
-   
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-      
-      $sql = "SELECT id FROM playerdata WHERE username = '$myusername' AND password = '$mypassword'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['active'];
-      
-      $count = mysqli_num_rows($result);
-      
-      // If result matched $myusername and $mypassword, table row must be 1 row
-		
-      if($count == 1) {
-         session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
-         
-         header("location: welcome.php");
-      }else {
-         $error = "Your Login Name or Password is invalid";
-      }
-   }
-?>
 <html>
-   
    <head>
       <title>Login Page</title>
       
@@ -81,10 +44,10 @@ $seldb = mysql_select_db($db);
       </div>
 
    </body>
-</html>
+
 <?php if(!empty($_POST["remember"])) {
-						setcookie ("username",$_POST["username"],time()+ 3600);
-						setcookie ("password",$_POST["password"],time()+ 3600);
+						setcookie ("username",$_POST["username"],time()+ 300);
+						setcookie ("password",$_POST["password"],time()+ 300);
 						echo "Cookies Set Successfuly";
 							} else {
 						setcookie("username","");
@@ -92,3 +55,4 @@ $seldb = mysql_select_db($db);
 	echo "Cookies Not Set";
 }
 ?>
+</html>

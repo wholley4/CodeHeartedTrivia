@@ -1,40 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
 <?php
-header('Access-Control-Allow-Origin: *');
 
-$host="trivia.cxqgmpxfjk2m.us-east-1.rds.amazonaws.com"; // Host name 
-$username="admin"; // Mysql username 
-$password="corncakes"; // Mysql password 
-$db_name="trivia"; // Database name 
-$tbl_name="playerdata"; // Table name
+$p1 = array(
+    'username' => 'drakenumberone789',
+    'score' => '7499',
+);
+$p2 = array(
+    'username' => 'vdogamer123',
+    'score' => '4999',
+);
+$p3 = array(
+    'username' => 'bestcoder25',
+    'score' => '999',
+);
 
-// Connect to server and select database.
-mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
-mysql_select_db("$db_name")or die("cannot select DB");
+$p4 = array(
+    'username' => 'sweetheart5432',
+    'score' => '24999',
+);
+$p5 = array(
+    'username' => '$_COOKIE[$username]',
+    'score' => '$_COOKIE[$highscore]',
+);
+
+$players = array($p1, $p2, $p3, $p4, $p5);
+arsort($players);
+
+echo('<table border="1">');
+echo('<tr><th>Username</th><th>Score</th></tr>');
+foreach ($players as $player)
+{
+    echo('<tr><td>' . htmlspecialchars($player['username']) . '</td>');
+    echo('<td>' . htmlspecialchars($player['score']) . '</td></tr>');
+}
+echo('</table>');
 ?>
-
-<table>
-            <tr>
-                <td>P1</td>
-                <td>P2</td>
-                <td>P3</td>
-                <td>P4</td>
-                <td>P5</td>
-            </tr>
-
-            <?php
-            $sql="SELECT username,score FROM playerdata ORDER BY score DESC LIMIT 10";
-            $result=mysql_query($sql);
-
-               while ($row = mysql_fetch_array($result)) {
-                   echo "<tr>";
-                   echo "<td>".$row['P1']."</td>";
-                   echo "<td>".$row['P2']."</td>";
-                   echo "<td>".$row['P3']."</td>";
-                   echo "<td>".$row['P4']."</td>";
-                   echo "<td>".$row['P5']."</td>";
-                   echo "</tr>";
-               }
-               mysql_close();
-
-            ?>
-        </table>
+</body>
+</html>
