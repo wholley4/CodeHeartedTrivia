@@ -12,7 +12,7 @@
 				
             <div style = "margin:30px">
                
-               <form action = "codd.cs.gsu.edu/~kgarrett10/CodeHeartedTriviahomepage.html" id="button1" method = "post">
+               <form action = "http://codd.cs.gsu.edu/~kgarrett10/CHTDash.html" id="button1" method = "post">
                   <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
 				  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
 				  <label>Remember Me </label><input type = "checkbox" name = "remember" class = "box" /> <br/><br />
