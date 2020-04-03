@@ -3,7 +3,7 @@ body
 	background-color: mediumvioletred;
 	margin: 0;
 	padding: 0;
-
+  height:100%;
 }
 
 h1{
@@ -45,9 +45,9 @@ h2{
 }
 
 .helper {
-  width: 20%;
-  margin-right: 7%;
-  margin-left: 7%;
+  width: 24vw;
+  margin-right: 4vw;
+  margin-left: 4vw;
   margin-bottom: 20px;
   float: left;
   border: 1px solid black;
@@ -61,4 +61,90 @@ h2{
 .helper_picture{
   width: 150px;
   float: right;
+}
+
+.logout{
+  float: right;
+  color: rgb(172, 28, 28);
+}
+
+.container{
+  margin: auto;
+  height: 100%;
+}
+
+#tower > div {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 4vh;
+  padding: 5px;
+  font: 18pt bold;
+  height: 4vh;
+}
+
+.prize{
+  background: mediumvioletred;
+}
+
+.prize_current{
+  background: rgb(221, 137, 189);
+}
+
+.prize_past{
+  background: rgb(21, 199, 80);
+}
+
+.center{
+  text-align: center;
+}
+
+.game_table{
+  width: 100%;
+  margin: 0px;
+}
+
+.game_table > div {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 8vh;
+  width: 29%;
+  font-size: 24pt;
+  text-align: center;
+  float:left;
+  height: 7vh;
+}
+
+.answered {
+  border: 1px solid rgb(46, 46, 46);
+  background: rgb(46, 46, 46);
+}
+
+.unanswered {
+  border: 1px solid pink;
+  background: lightpink;
+}
+
+.unanswered:hover {
+  background: yellow;
+}
+
+.submit {
+  font-family: Tahoma, Verdana, sans-serif;
+  background-color: lightpink;
+  color: black;
+  border: 5px solid palevioletred; 
+  font-size: 40px;
+  padding: 10px;
+  display: block;
+  width: 30%;
+  margin: auto;
+  text-align:center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 50%;
+}
+
+.submit:hover {
+  background-color: palevioletred;
+  color: black;  
 }
