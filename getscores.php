@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
+      <title>Leaderboards</title>
+      <link rel="stylesheet" type="text/css" href="../CHTglike.css">
+   </head>
 <body>
 <?php
 
