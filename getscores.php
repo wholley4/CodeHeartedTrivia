@@ -40,6 +40,7 @@ foreach ($players as $player)
     echo('<td>' . htmlspecialchars($player['score']) . '</td></tr>');
 }
 echo('</table>');
+echo ('<a href="http://codd.cs.gsu.edu/~kgarrett10/CodeHeartedTriviahomepage.html" id="button1">Back</a>')
 ?>
 </body>
 </html>

@@ -12,15 +12,13 @@
 				
             <div style = "margin:30px">
                
-               <form action = "" method = "post">
+               <form action = "codd.cs.gsu.edu/~kgarrett10/CodeHeartedTriviahomepage.html" id="button1" method = "post">
                   <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
 				  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
 				  <label>Remember Me </label><input type = "checkbox" name = "remember" class = "box" /> <br/><br />
 				
                   <input type = "submit" value = " Submit "/><br />
                </form>
-               
-               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
 					
             </div>
 				
@@ -39,5 +37,6 @@
 						setcookie("password","");
 	echo "Cookies Not Set";
 }
+
 ?>
 </html>
