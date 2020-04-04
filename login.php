@@ -12,7 +12,7 @@
 				
             <div style = "margin:30px;font-family: Tahoma, Verdana, sans-serif;">
                
-               <form action = "http://codd.cs.gsu.edu/~kgarrett10/CHTDash.html method = "post">
+               <form action = "http://codd.cs.gsu.edu/~kgarrett10/CHTDash.html method" = post>
                   <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
 				  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
 				  <label>Remember Me </label><input type = "checkbox" name = "remember" class = "box" /> <br/><br />
