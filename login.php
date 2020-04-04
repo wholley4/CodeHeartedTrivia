@@ -1,23 +1,23 @@
 <html>
    <head>
       <title>Login Page</title>
-      <link rel="stylesheet" type="text/css" href="../CHTglike.css">
+      <link rel="stylesheet" type="text/css" href="./CHTglike.css">
    </head>
    
-   <body bgcolor = "#FFFFFF">
+   <body>
 	
       <div align = "center">
-         <div style = "width:300px; border: solid 1px #333333; " align = "left">
-            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
+         <div style = " background-color:lightpink; width:300px; border: solid 2px #333333; " align = "left">
+            <div style = "background-color:#333333; color:#FFFFFF; padding:3px; font-family: Tahoma, Verdana, sans-serif;"><b>Login</b></div>
 				
-            <div style = "margin:30px">
+            <div style = "margin:30px;font-family: Tahoma, Verdana, sans-serif;">
                
-               <form action = "http://codd.cs.gsu.edu/~kgarrett10/CHTDash.html" id="button1" method = "post">
+               <form action = "http://codd.cs.gsu.edu/~kgarrett10/CHTDash.html method = "post">
                   <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
 				  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
 				  <label>Remember Me </label><input type = "checkbox" name = "remember" class = "box" /> <br/><br />
 				
-                  <input type = "submit" value = " Submit "/><br />
+                  <input style="font-family: Tahoma, Verdana, sans-serif;" type = "submit" value = " Submit "/><br />
                </form>
 					
             </div>
