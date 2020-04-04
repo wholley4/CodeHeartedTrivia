@@ -43,5 +43,5 @@ foreach ($players as $player)
 echo('</table>');
 ?>
 
-<a href="http://codd.cs.gsu.edu/~kgarrett10/CodeHeartedTriviahomepage.html" id="button1">Back</a>
+<a href="http://codd.cs.gsu.edu/~kgarrett10/CHTDash.html" id="button1">Back</a>
 </body>
