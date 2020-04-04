@@ -1,10 +1,11 @@
-<!DOCTYPE html>
 <html>
 <head>
-      <title>Leaderboards</title>
-      <link rel="stylesheet" type="text/css" href="../CHTglike.css">
+      <link rel="stylesheet" type="text/css" href="./CHTglike.css">
    </head>
 <body>
+
+<h1> Leaderboard </h1>
+
 <?php
 
 $p1 = array(
@@ -32,7 +33,7 @@ $p5 = array(
 $players = array($p1, $p2, $p3, $p4, $p5);
 arsort($players);
 
-echo('<table border="1">');
+echo('<table border="1"');
 echo('<tr><th>Username</th><th>Score</th></tr>');
 foreach ($players as $player)
 {
@@ -40,7 +41,7 @@ foreach ($players as $player)
     echo('<td>' . htmlspecialchars($player['score']) . '</td></tr>');
 }
 echo('</table>');
-echo ('<a href="http://codd.cs.gsu.edu/~kgarrett10/CodeHeartedTriviahomepage.html" id="button1">Back</a>')
 ?>
+
+<a href="http://codd.cs.gsu.edu/~kgarrett10/CodeHeartedTriviahomepage.html" id="button1">Back</a>
 </body>
-</html>
